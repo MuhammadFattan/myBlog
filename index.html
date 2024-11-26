@@ -21,12 +21,7 @@
             rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
         />
 
-        <style>
-            section {
-                padding: 60px 0;
-            
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body class="bg-dark">
@@ -137,19 +132,28 @@
         <!--Content end-->
 
         <!-- comment section start -->
-        <div id="disqus_thread"></div>
-        <script>
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://myblog-muhammad-fattan-3.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-        </script>
+        <div class="comment-section">
+            <!-- Form untuk komentar -->
+            <form action="submit_comment.php" method="POST" class="comment-form">
+                <h2>Tinggalkan komentar</h2>
+                <p>Gak perlu login, ketik aja</p>
+                <input type="text" name="username" placeholder="Tulis namamu" required>
+                <textarea name="comment" placeholder="Tulis komentarmu disini..." required></textarea>
+                <button type="submit">Kirim</button>
+                tesklcslkdlaksj
+            </form>
+
+            <!-- Daftar komentar -->
+            <div class="comments">
+                <h2>Komentar</h2>
+            <hr>
+                <?php include 'fetch_comments.php'; ?>
+            </div>
+        </div>] 
 
         <!--footer start-->
         <footer>
-            <div class="container-fluid">
+            <div class="container-fluid">   
                 <div class="row justify-content-center align-items-center bg-black pt-4">
                     <div class="col-md-5 text-start text-md-start">
                         <h6 class="text-white mb-4">Be close with me</h6>
