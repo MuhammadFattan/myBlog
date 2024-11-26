@@ -17,7 +17,7 @@ $stmt->bind_param("ss", $username, $comment);
 
 if ($stmt->execute()) {
     // Redirect kembali ke halaman utama
-    header("Location: index.php");
+    header("Location: index.html");
     exit;
 } else {
     echo "Error: " . $stmt->error;
