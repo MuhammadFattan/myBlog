@@ -21,7 +21,93 @@
             rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
         />
 
+<<<<<<< HEAD:index.html
         <link rel="stylesheet" href="style.css">
+=======
+        <style>
+            section {
+                padding: 60px 0;
+            
+            }
+        </style>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #181818;
+                color: #fff;
+                margin: 0;
+                padding: 0;
+            }
+
+            .comment-section {
+                width: 60%;
+                margin: 20px auto;
+                background-color: #242424;
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            .comment-form {
+                margin-bottom: 20px;
+            }
+
+            .comment-form h2 {
+                margin-bottom: 10px;
+            }
+
+            .comment-form input,
+            .comment-form textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                background-color: #333;
+                color: #fff;
+            }
+
+            .comment-form button {
+                padding: 10px 20px;
+                border: none;
+                background-color: #ff4500;
+                color: #fff;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .comment-form button:hover {
+                background-color: #ff6347;
+            }
+
+            .comments h2 {
+                margin-bottom: 10px;
+            }
+
+            .comment {
+                border-bottom: 1px solid #444;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+            }
+
+            .comment h3 {
+                margin: 0;
+                font-size: 1.2em;
+                color: #ff8c00;
+            }
+
+            .comment p {
+                margin: 5px 0;
+            }
+
+            .comment small {
+                color: #aaa;
+                font-size: 0.9em;
+            }
+
+        </style>
+
+>>>>>>> a2061e6c3db663fb52bb2f708878773a2e24f672:index.php
     </head>
 
     <body class="bg-dark">
@@ -132,6 +218,7 @@
         <!--Content end-->
 
         <!-- comment section start -->
+<<<<<<< HEAD:index.html
         <div class="comment-section">
             <!-- Form untuk komentar -->
             <form action="submit_comment.php" method="POST" class="comment-form">
@@ -140,6 +227,7 @@
                 <input type="text" name="username" placeholder="Tulis namamu" required>
                 <textarea name="comment" placeholder="Tulis komentarmu disini..." required></textarea>
                 <button type="submit">Kirim</button>
+                tesklcslkdlaksj
             </form>
 
             <!-- Daftar komentar -->
@@ -148,12 +236,23 @@
             <hr>
                 <?php include 'fetch_comments.php'; ?>
             </div>
+        </div>] 
+=======
+        <!-- Form untuk komentar -->
+        <form action="submit_comment.php" method="post" class="comment-form">
+            <h2>Tinggalkan komentar</h2>
+            <p>Tak perlu login, cukup ketik aja</p>
+            <input type="text" name="username" id="username" placeholder="Namamu" required><br><br>
+            <textarea name="comment" id="comment" placeholder="Ketik komentarmu di sini..." required></textarea><br><br>
+            <button type="submit">Kirim</button>
+        </form>
+
+        <!-- Daftar komentar -->
+        <div class="comments">
+            <h2>komentar</h2>
+            <?php in?>
         </div>
-        <!-- casdasdasdasdasdasdassasas -->
-        <!-- casdasdasdasdasdasdassasas -->
-        <!-- casdasdasdasdasdasdassasas -->
-        <!-- casdasdasdasdasdasdassasas -->
-        <!-- casdasdasdasdasdasdassasas -->
+>>>>>>> a2061e6c3db663fb52bb2f708878773a2e24f672:index.php
 
         <!--footer start-->
         <footer>

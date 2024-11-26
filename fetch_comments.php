@@ -1,4 +1,5 @@
 <?php
+
 // Koneksi ke database
 $conn = new mysqli('localhost', 'root', '', 'comment_system');
 
