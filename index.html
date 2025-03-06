@@ -134,20 +134,18 @@
         <!-- comment section start -->
         <div class="comment-section">
             <!-- Form untuk komentar -->
-            <form action="submit_comment.php" method="POST" class="comment-form">
-                <h2>Tinggalkan komentar</h2>
-                <p>Gak perlu login, ketik aja</p>
-                <input type="text" name="username" placeholder="Tulis namamu" required>
-                <textarea name="comment" placeholder="Tulis komentarmu disini..." required></textarea>
-                <button type="submit">Kirim</button>
-            </form>
-
-            <!-- Daftar komentar -->
-            <div class="comments">
-                <h2>Komentar</h2>
-            <hr>
-                <?php include 'fetch_comments.php'; ?>
-            </div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;  // URL halaman
+                    this.page.identifier = window.location.pathname; // ID unik halaman
+                };
+                (function() { // Jangan edit di bawah ini
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://myblog-muhammad-fattan.disqus.com/embed.js';  // Ganti 'your-site-name' dengan shortname Disqus kamu
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
         </div>
 
         <!--footer start-->
